@@ -13,5 +13,11 @@ public class CalculatorTest {
 		testee = new Calculator();
 		assertTrue(testee.Summe(10, 30) == 40);
 	}
+	
+	@Test
+	public void testSubtraktionZweiPositiveIsOk() {
+		testee = new Calculator();
+		assertTrue(testee.Summe(30, 10) == 20);
+	}
 
 }
