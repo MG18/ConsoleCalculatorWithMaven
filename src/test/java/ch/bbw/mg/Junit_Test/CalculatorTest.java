@@ -11,13 +11,13 @@ public class CalculatorTest {
 	@Test
 	public void testSummeZweiPositiveIsOk() {
 		testee = new Calculator();
-		assertTrue(testee.Summe(10, 30) == 40);
+		assertTrue(testee.summe(10, 30) == 40);
 	}
 	
 	@Test
 	public void testSubtraktionZweiPositiveIsOk() {
 		testee = new Calculator();
-		assertTrue(testee.Summe(30, 10) == 20);
+		assertTrue(testee.subtraction(30, 10) == 20);
 	}
 
 }

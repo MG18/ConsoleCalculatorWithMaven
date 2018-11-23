@@ -17,6 +17,6 @@ public class App
         System.out.println("-------------------");
         System.out.println("");
         
-        System.out.println(calculator.Summe(valueA, valueB));
+        System.out.println(calculator.summe(valueA, valueB));
     }
 }
