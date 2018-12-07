@@ -12,7 +12,7 @@ public class CalculatorTest {
 	
 	@Before
 	public void setUp() {
-		Calculator testee = new Calculator();
+		testee = new Calculator();
 	}
 	
 
