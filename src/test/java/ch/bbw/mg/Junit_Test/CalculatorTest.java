@@ -98,11 +98,14 @@ public class CalculatorTest {
 		assertTrue(testee.subtraction(Integer.MIN_VALUE, -1) == -2147483647);
 	}
 	
+	
+	// Test Protected Methode
 	@Test
 	public void testProtectedMethodeMultiplizieren() {
 		assertTrue(testee.multiplikation(30, 4) == 120 );
 	}
 	
+	// Test package Private Methode
 	@Test public void testPackagePrivateMethodePotenzieren() {
 		assertTrue(testee.potenzieren(3, 3) == 27);
 	}
@@ -117,6 +120,11 @@ public class CalculatorTest {
 	public void testDivisionDurchNullExceptionUnexpected()
 	throws IndexOutOfBoundsException{
 		testee.division(40, 1);
+	}
+	
+	@Test
+	public void testNullDurchPositiveZahl() {
+		assertTrue(testee.division(0, 40) == 0);
 	}
 	
 	
