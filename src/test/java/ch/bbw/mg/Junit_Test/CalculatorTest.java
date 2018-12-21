@@ -103,6 +103,10 @@ public class CalculatorTest {
 		assertTrue(testee.multiplikation(30, 4) == 120 );
 	}
 	
+	@Test public void testPackagePrivateMethodePotenzieren() {
+		assertTrue(testee.potenzieren(3, 3) == 27);
+	}
+	
 	
 	@Test(expected=ArithmeticException.class)
 		public void testDivisionDurchNull() {
