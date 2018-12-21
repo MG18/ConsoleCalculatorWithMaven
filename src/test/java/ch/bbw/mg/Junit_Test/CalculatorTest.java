@@ -15,7 +15,8 @@ public class CalculatorTest {
 		testee = new Calculator();
 	}
 	
-
+	
+	// Summe Tests
 	@Test
 	public void testSummeZweiPositiveIsOk() {
 		assertTrue(testee.summe(10, 30) == 40);
@@ -56,11 +57,48 @@ public class CalculatorTest {
 		assertTrue(testee.summe(Integer.MIN_VALUE, -1) > 0);
 	}
 	
-	
+	// Subtraktion Tests
 	@Test
 	public void testSubtraktionZweiPositiveIsOk() {
 		assertTrue(testee.subtraction(30, 10) == 20);
 	}
+	
+	@Test
+	public void testSubtraktionEineNeagtiveEinePositive() {
+		assertTrue(testee.subtraction(-10, 50) == -60);
+	}
+	
+	@Test
+	public void testSubtraktionNullMitEinerPositiven() {
+		assertTrue(testee.subtraction(0, 40) == -40);
+	}
+	
+	@Test
+	public void testSubtraktionNullMitEinerNegativen() {
+		assertTrue(testee.subtraction(0, -40) == 40);
+	}
+	
+	@Test
+	public void testSubtraktionMAXValueMitEinerPositiven() {
+		assertTrue(testee.subtraction(Integer.MAX_VALUE, 1) == 2147483646);
+	}
+	
+	@Test
+	public void testSubtraktionMAXValueMitEinerNegativen() {
+		assertTrue(testee.subtraction(Integer.MAX_VALUE, -1) == -2147483648);
+	}
+	
+	@Test
+	public void testSubtraktionMINValueMitEinerPositiven() {
+		assertTrue(testee.subtraction(Integer.MIN_VALUE, 1) == 2147483647);
+	}
+	
+	@Test
+	public void testSubtraktionMINValueMitEinerNegativen() {
+		assertTrue(testee.subtraction(Integer.MIN_VALUE, -1) == -2147483647);
+	}
+	
+	
 	
 	@Test(expected=ArithmeticException.class)
 		public void testDivisionDurchNull() {
