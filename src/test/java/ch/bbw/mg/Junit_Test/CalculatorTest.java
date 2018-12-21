@@ -124,22 +124,22 @@ public class CalculatorTest {
 	}
 	
 	@Test
-	public void testDivisionZweiPositive() {
+	public void testDivisionZweiPositiveZahlen() {
 		assertTrue(testee.subtraction(30, 3) == 10);
 	}
 	
 	@Test
-	public void testNullDurchPositiveZahl() {
+	public void testDivisionNullDurchPositiveZahl() {
 		assertTrue(testee.division(0, 40) == 0);
 	}
 	
 	@Test
-	public void testNullDurchNegativeZahl() {
+	public void testDivisionNullDurchNegativeZahl() {
 		assertTrue(testee.division(0, -40) == 0);
 	}
 	
 	@Test
-	public void testPositiveZahlDurchNegativeZahl() {
+	public void testDivisionPositiveZahlDurchNegativeZahl() {
 		assertTrue(testee.division(50, -10) == -5);
 	}
 	
