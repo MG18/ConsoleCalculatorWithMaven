@@ -125,7 +125,7 @@ public class CalculatorTest {
 	
 	@Test
 	public void testDivisionZweiPositiveZahlen() {
-		assertTrue(testee.subtraction(30, 3) == 10);
+		assertTrue(testee.division(30, 3) == 10);
 	}
 	
 	@Test
