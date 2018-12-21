@@ -36,6 +36,10 @@ public class CalculatorTest {
 		assertTrue(testee.summe(0, -40) == -40);
 	}
 	
+	@Test
+	public void testMAXValueMitEinerPositiven() {
+		assertTrue(testee.summe(Integer.MAX_VALUE, 1) < 0);
+	}
 	
 	
 	@Test
