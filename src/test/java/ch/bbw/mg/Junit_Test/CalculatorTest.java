@@ -27,6 +27,18 @@ public class CalculatorTest {
 	}
 	
 	@Test
+	public void testNullMitEinerPositiven() {
+		assertTrue(testee.summe(0, 40) == 40);
+	}
+	
+	@Test
+	public void testNullMitEinerNegativen() {
+		assertTrue(testee.summe(0, -40) == -40);
+	}
+	
+	
+	
+	@Test
 	public void testSubtraktionZweiPositiveIsOk() {
 		assertTrue(testee.subtraction(30, 10) == 20);
 	}
