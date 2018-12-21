@@ -25,5 +25,21 @@ public class CalculatorTest {
 	public void testSubtraktionZweiPositiveIsOk() {
 		assertTrue(testee.subtraction(30, 10) == 20);
 	}
+	
+	@Test(expected=ArithmeticException.class)
+		public void testDivisionDurchNull() {
+			testee.division(40, 0);
+		}
+	
+	@Test
+	public void testDivisionDurchNullExceptionUnexpected()
+	throws IndexOutOfBoundsException{
+		testee.division(40, 1);
+	}
+	
+	
+	
+	
+	
 
 }

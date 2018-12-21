@@ -10,7 +10,7 @@ public class Calculator {
 		return summand1 - summand2;
 	}
 	
-	public double division(double divident, double divisor) {
+	public int division(int divident, int divisor) {
 		return divident / divisor;
 	}
 }
