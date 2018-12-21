@@ -132,6 +132,11 @@ public class CalculatorTest {
 		assertTrue(testee.division(0, -40) == 0);
 	}
 	
+	@Test
+	public void testPositiveZahlDurchNegativeZahl() {
+		assertTrue(testee.division(50, -10) == -5);
+	}
+	
 	
 	
 	
