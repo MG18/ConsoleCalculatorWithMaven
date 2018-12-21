@@ -116,10 +116,16 @@ public class CalculatorTest {
 			testee.division(40, 0);
 		}
 	
+	
 	@Test
 	public void testDivisionDurchNullExceptionUnexpected()
 	throws IndexOutOfBoundsException{
 		testee.division(40, 1);
+	}
+	
+	@Test
+	public void testDivisionZweiPositive() {
+		assertTrue(testee.subtraction(30, 3) == 10);
 	}
 	
 	@Test
