@@ -41,6 +41,11 @@ public class CalculatorTest {
 		assertTrue(testee.summe(Integer.MAX_VALUE, 1) < 0);
 	}
 	
+	@Test
+	public void testMAXValueMitEinerNegativen() {
+		assertTrue(testee.summe(Integer.MAX_VALUE, -1) == 2147483646);
+	}
+	
 	
 	@Test
 	public void testSubtraktionZweiPositiveIsOk() {
