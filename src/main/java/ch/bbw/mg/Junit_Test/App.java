@@ -18,7 +18,7 @@ public class App
         System.out.println("");
         
         System.out.println(calculator.summe(Integer.MIN_VALUE, -1));
-        System.out.println(calculator.division(Integer.MIN_VALUE, 100));
+        System.out.println(calculator.division(Integer.MAX_VALUE, -100));
         System.out.println(calculator.subtraction(Integer.MAX_VALUE, -1));
         
     }
