@@ -27,32 +27,32 @@ public class CalculatorTest {
 	}
 	
 	@Test
-	public void testNullMitEinerPositiven() {
+	public void testSummeNullMitEinerPositiven() {
 		assertTrue(testee.summe(0, 40) == 40);
 	}
 	
 	@Test
-	public void testNullMitEinerNegativen() {
+	public void testSummeNullMitEinerNegativen() {
 		assertTrue(testee.summe(0, -40) == -40);
 	}
 	
 	@Test
-	public void testMAXValueMitEinerPositiven() {
+	public void testSummeMAXValueMitEinerPositiven() {
 		assertTrue(testee.summe(Integer.MAX_VALUE, 1) < 0);
 	}
 	
 	@Test
-	public void testMAXValueMitEinerNegativen() {
+	public void testSummeMAXValueMitEinerNegativen() {
 		assertTrue(testee.summe(Integer.MAX_VALUE, -1) == 2147483646);
 	}
 	
 	@Test
-	public void testMINValueMitEinerPositiven() {
+	public void testSummeMINValueMitEinerPositiven() {
 		assertTrue(testee.summe(Integer.MIN_VALUE, 1) == -2147483647);
 	}
 	
 	@Test
-	public void testMINValueMitEinerNegativen() {
+	public void testSummeMINValueMitEinerNegativen() {
 		assertTrue(testee.summe(Integer.MIN_VALUE, -1) > 0);
 	}
 	
