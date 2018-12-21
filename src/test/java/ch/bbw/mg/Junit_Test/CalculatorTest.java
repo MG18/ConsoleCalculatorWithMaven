@@ -152,6 +152,11 @@ public class CalculatorTest {
 		assertTrue(testee.division(Integer.MAX_VALUE, -100) == -21474836);
 	}
 	
+	@Test
+	public void testDivisionMAXValueDurchPositiveZahl() {
+		assertTrue(testee.division(Integer.MAX_VALUE, 100) == 21474836);
+	}
+	
 	
 	
 	
