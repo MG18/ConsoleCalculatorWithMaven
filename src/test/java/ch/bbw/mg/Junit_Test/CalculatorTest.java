@@ -98,6 +98,10 @@ public class CalculatorTest {
 		assertTrue(testee.subtraction(Integer.MIN_VALUE, -1) == -2147483647);
 	}
 	
+	@Test
+	public void testProtectedMethodeMultiplizieren() {
+		assertTrue(testee.multiplikation(30, 4) == 120 );
+	}
 	
 	
 	@Test(expected=ArithmeticException.class)
