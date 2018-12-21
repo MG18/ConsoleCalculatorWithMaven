@@ -1,3 +1,10 @@
 language: java
 sudo: false
 script: mvn install
+deploy:
+  provider: releases
+  api_key:
+    secure: k59G5XzEStmdCoZPjiz5V/s0JyXtsgQB5lnYHVstVGgVJIAEAskO6jtazZzN1V/1hIk1FJ7KXxmmA+BpNtRwyHU+MUtww2few/T+phsPzYNLuzAatHkYKaUVf3vSin1nfAfkQz71bwEhdpV1U9au4+2NN+GYj6yUTQRWcnVoAcGTSIa7iWNkcSurQed/usIKyBrtFfZORzBwXc9i8oK8criAjGN0E2nK43wQSQVOg53SwNIJL+uAihg4coZzjJDDtbnC4hHF+t6VSE8MQ2Hq1+kTgFey05JnTh7rsan+jargUlgvJXcqBqTVWfILu1I+6zsviEBhoMTk82gtNAwF54X/baoROcNL98mxDHcqADpUvjcH7zIfHg0eCjrbM04p1yY4y8fg8Qxd/48CyTVe97MlgxeY+k1Fa/5QwY8UkXcmdANDE2OpQllpv5MdCM9KNs7fXgf5QMlE2z48fWZKl/KvG/xCfJbxwExmNv80ncAzDMAf8HLtdoxPQlzIXkZgOKDIVukT9ZApz8P7J4NNW4lJ7xRjCuvtc1jbcA0OveqckgCJQdJI3hjki4AfWos0dk61qmAcYOo2/DaRgiu9NuRzLsuHGPdH4yTU/wEAHi68U3fMMxSgEYCC3IhLA6wYQ0zKlZLLOMWEl8YIfbgUECUoOvcdp25CU0t+AQxzT2w=
+  file: "/home/travis/.m2/repository/ch/bbw/mg/Junit_Test/0.0.1-SNAPSHOT/Junit_Test-0.0.1-SNAPSHOT.jar"
+  on:
+    repo: MG18/ConsoleCalculatorWithMaven
