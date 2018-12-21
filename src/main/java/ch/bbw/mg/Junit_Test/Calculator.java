@@ -13,4 +13,14 @@ public class Calculator {
 	public int division(int divident, int divisor) {
 		return divident / divisor;
 	}
+	
+    protected int multiplikation(int faktor1 , int faktor2) {
+        return faktor1 * faktor2;
+    }
+
+    int potenzieren (int basis, int exponent) {
+    	
+		return (int) Math.pow(basis, exponent);
+    }
+	
 }
