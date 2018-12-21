@@ -127,6 +127,13 @@ public class CalculatorTest {
 		assertTrue(testee.division(0, 40) == 0);
 	}
 	
+	@Test
+	public void testNullDurchNegativeZahl() {
+		assertTrue(testee.division(0, -40) == 0);
+	}
+	
+	
+	
 	
 	
 	
