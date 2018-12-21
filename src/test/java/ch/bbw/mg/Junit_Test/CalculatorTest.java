@@ -98,11 +98,14 @@ public class CalculatorTest {
 		assertTrue(testee.subtraction(Integer.MIN_VALUE, -1) == -2147483647);
 	}
 	
+	
+	// Test Protected Methode
 	@Test
 	public void testProtectedMethodeMultiplizieren() {
 		assertTrue(testee.multiplikation(30, 4) == 120 );
 	}
 	
+	// Test package Private Methode
 	@Test public void testPackagePrivateMethodePotenzieren() {
 		assertTrue(testee.potenzieren(3, 3) == 27);
 	}
@@ -113,11 +116,54 @@ public class CalculatorTest {
 			testee.division(40, 0);
 		}
 	
+	
 	@Test
 	public void testDivisionDurchNullExceptionUnexpected()
 	throws IndexOutOfBoundsException{
 		testee.division(40, 1);
 	}
+	
+	@Test
+	public void testDivisionZweiPositiveZahlen() {
+		assertTrue(testee.subtraction(30, 3) == 10);
+	}
+	
+	@Test
+	public void testDivisionNullDurchPositiveZahl() {
+		assertTrue(testee.division(0, 40) == 0);
+	}
+	
+	@Test
+	public void testDivisionNullDurchNegativeZahl() {
+		assertTrue(testee.division(0, -40) == 0);
+	}
+	
+	@Test
+	public void testDivisionPositiveZahlDurchNegativeZahl() {
+		assertTrue(testee.division(50, -10) == -5);
+	}
+	
+	@Test
+	public void testDivisionMINValueDurchNegativeZahl() {
+		assertTrue(testee.division(Integer.MIN_VALUE, -100) == 21474836);
+	}
+	
+	@Test
+	public void testDivisionMINValueDurchPositiveZahl() {
+		assertTrue(testee.division(Integer.MIN_VALUE, 100) == -21474836);
+	}
+	
+	@Test
+	public void testDivisionMAXValueDurchNegativeZahl() {
+		assertTrue(testee.division(Integer.MAX_VALUE, -100) == -21474836);
+	}
+	
+	@Test
+	public void testDivisionMAXValueDurchPositiveZahl() {
+		assertTrue(testee.division(Integer.MAX_VALUE, 100) == 21474836);
+	}
+	
+	
 	
 	
 	
