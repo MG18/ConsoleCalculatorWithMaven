@@ -137,6 +137,10 @@ public class CalculatorTest {
 		assertTrue(testee.division(50, -10) == -5);
 	}
 	
+	@Test
+	public void testDivisionMINValueDurchNegativeZahl() {
+		assertTrue(testee.division(Integer.MIN_VALUE, -100) == 21474836);
+	}
 	
 	
 	
