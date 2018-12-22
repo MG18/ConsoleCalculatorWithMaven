@@ -111,6 +111,9 @@ public class CalculatorTest {
 	}
 	
 	
+	
+	// Test Exceptions
+	
 	@Test(expected=ArithmeticException.class)
 		public void testDivisionDurchNull() {
 			testee.division(40, 0);
@@ -122,6 +125,8 @@ public class CalculatorTest {
 	throws IndexOutOfBoundsException{
 		testee.division(40, 1);
 	}
+	
+	// Division Tests
 	
 	@Test
 	public void testDivisionZweiPositiveZahlen() {
